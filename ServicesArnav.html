@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="Images/weather-forecast.png">
     <title>Our Services</title>
     <style>
         *{
@@ -50,21 +53,21 @@
             <div class="service lightning" onclick="funL();">Lightening</div>
         </div>
         <div class="imageTab">
-            <img id="myimage" src="satellite.jpg" alt="Loading">
+            <img id="myimage" src="Images/satellite.jpg" alt="Loading">
         </div>
     </div>
 
     <script>
         function funS() {
-            document.getElementById("myimage").src = "satellite.jpg";
+            document.getElementById("myimage").src = "Images/satellite.jpg";
         }
 
         function funR() {
-            document.getElementById("myimage").src = "radar.jpg";
+            document.getElementById("myimage").src = "Images/radar.jpg";
         }
 
         function funL() {
-            document.getElementById("myimage").src = "lighting.jpg";
+            document.getElementById("myimage").src = "Images/lighting.jpg";
         }
     </script>
 </body>

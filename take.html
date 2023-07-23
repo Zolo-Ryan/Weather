@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
   <title>Weather Measures</title>
-  <link rel="icon" type="image/x-icon" href="weather-forecast.png">
+  <link rel="icon" type="image/x-icon" href="Images/weather-forecast.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
     /* CSS styles for the weather measures page */
     body {
@@ -142,35 +144,35 @@
 
     <div class="measure-card">
       <h2>Rainy Weather</h2>
-      <img src="rainy.jpg" alt="Rainy Weather">
+      <img src="Images/rainy.jpg" alt="Rainy Weather">
       <p>When it's raining, remember to carry an umbrella and wear waterproof clothing to stay dry.</p>
       <button class="measure-btn" onclick="takeMeasure('rain');">Take Measure</button>
     </div>
 
     <div class="measure-card">
       <h2>Sunny Weather</h2>
-      <img src="sunny.jpg" alt="Sunny Weather">
+      <img src="Images/sunny.jpg" alt="Sunny Weather">
       <p>On a sunny day, don't forget to apply sunscreen, wear a hat, and stay hydrated.</p>
       <button class="measure-btn" onclick="takeMeasure('sun')">Take Measure</button>
     </div>
 
     <div class="measure-card">
       <h2>Snowy Weather</h2>
-      <img src="snowy.jpg" alt="Snowy Weather">
+      <img src="Images/snowy.jpg" alt="Snowy Weather">
       <p>During snowy weather, wear warm clothing, boots, and be cautious of slippery surfaces.</p>
       <button class="measure-btn" onclick="takeMeasure('snow')">Take Measure</button>
     </div>
 
     <div class="measure-card">
       <h2>Windy Weather</h2>
-      <img src="windy.jpg" alt="Windy Weather">
+      <img src="Images/windy.jpg" alt="Windy Weather">
       <p>When it's windy, secure loose objects, dress in layers, and protect your eyes from blowing debris.</p>
       <button class="measure-btn" onclick="takeMeasure('wind')">Take Measure</button>
     </div>
 
     <div class="measure-card">
       <h2>Foggy Weather</h2>
-      <img src="foggy.jpg" alt="Foggy Weather">
+      <img src="Images/foggy.jpg" alt="Foggy Weather">
       <p>In foggy conditions, drive with caution, use low-beam headlights, and allow extra time for travel.</p>
       <button class="measure-btn" onclick="takeMeasure('fog')">Take Measure</button>
     </div>
@@ -193,7 +195,7 @@
 
       if (weather === 'rain') {
         document.getElementById("popup").style.visibility = "visible";
-        document.getElementById("popup").innerHTML = `<img src="rain.png" id="image" />
+        document.getElementById("popup").innerHTML = `<img src="Images/rain.png" id="image" />
         <h2>Rainy Weather</h2>
         <p><ul>
           <li>Don’t touch electric wires</li>
@@ -208,7 +210,7 @@
         <button type="button" onclick="closepopup()">OK</button>`;
       } else if (weather === 'sun') {
         document.getElementById("popup").style.visibility = "visible";
-        document.getElementById("popup").innerHTML = `<img src="sunny.png" id="image" />
+        document.getElementById("popup").innerHTML = `<img src="Images/sunny.png" id="image" />
         <h2>Sunny Weather</h2>
         <p><ul>
           <li>Get outside and stay active</li>
@@ -223,7 +225,7 @@
         <button type="button" onclick="closepopup()">OK</button>`;
       } else if (weather === 'snow') {
         document.getElementById("popup").style.visibility = "visible";
-        document.getElementById("popup").innerHTML = `<img src="snowy.png" id="image" />
+        document.getElementById("popup").innerHTML = `<img src="Images/snowy.png" id="image" />
         <h2>Snowy Weather</h2>
         <p><ul>
           <li>Install weather stripping, insulation, and storm windows</li>
@@ -237,7 +239,7 @@
         <button type="button" onclick="closepopup()">OK</button>`;
       } else if (weather === 'wind') {
         document.getElementById("popup").style.visibility = "visible";
-        document.getElementById("popup").innerHTML = `<img src="wind.png" id="image" />
+        document.getElementById("popup").innerHTML = `<img src="Images/wind.png" id="image" />
         <h2>Windy Weather</h2>
         <p><ul>
           <li>Stay informed</li>
@@ -250,7 +252,7 @@
         <button type="button" onclick="closepopup()">OK</button>`;
       } else if (weather === 'fog') {
         document.getElementById("popup").style.visibility = "visible";
-        document.getElementById("popup").innerHTML = `<img src="fog.png" id="image" />
+        document.getElementById("popup").innerHTML = `<img src="Images/fog.png" id="image" />
         <h2>Foggy Weather</h2>
         <p>Here are some tips to stay safe while driving through dense fog<ul>
           <li>Set the headlights on low beam</li>
