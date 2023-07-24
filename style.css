@@ -31,6 +31,7 @@ ul {
   width: 97.6%;
   border-radius: 10px;
   margin-top: 0%;
+  z-index: 3;
 }
 
 .ulmenu {
@@ -42,7 +43,6 @@ ul {
 	display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .menu li {
@@ -364,3 +364,4 @@ a {
     display: none;
   }
 }
+
